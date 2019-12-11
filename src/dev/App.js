@@ -1,13 +1,15 @@
 import React from 'react';
-import Button from '../lib';
+import AudioPlayer from '../lib';
 import logo from './logo.png';
 
+import '../lib/style.css';
+
 const App = () => (
-  <div className="content">
-    <img src={logo} className="logo" alt="Logo Create React Dependency" />
-    <h1 className="title">Create React Dependency</h1>
-    <section className="library">
-      <Button onClick={() => alert('button')}>My Library Button</Button>
+  <div className='content'>
+    <img src={logo} className='logo' alt='Logo Create React Dependency' />
+    <h1 className='title'>Create React Dependency</h1>
+    <section className='library'>
+      <AudioPlayer src='http://www.testsounds.com/track39.mp3'></AudioPlayer>
     </section>
   </div>
 );
